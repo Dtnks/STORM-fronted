@@ -1,27 +1,13 @@
 <script setup>
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-
-const tabs = [
-  { path: '/tutorials/visium', label: 'Visium' },
-]
-
-const isActive = (path) => route.path.startsWith(path)
 </script>
 
 <template>
   <div class="tutorials-layout">
-    <header class="header">
       <div>
         <h1>Tutorials</h1>
-        <p>Step-by-step snippets to help you run STORM workflows quickly.</p>
       </div>
-    </header>
 
-    <main class="content">
       <router-view />
-    </main>
   </div>
 </template>
 
@@ -32,13 +18,13 @@ const isActive = (path) => route.path.startsWith(path)
   gap: 16px;
 }
 
-.header h1 {
+ h1 {
   font-size: 28px;
   margin-bottom: 6px;
   color: #2c3e50;
 }
 
-.header p {
+ p {
   color: #4f4f4f;
 }
 
@@ -69,12 +55,6 @@ const isActive = (path) => route.path.startsWith(path)
   border-color: #007bff;
 }
 
-.content {
-  background: #fff;
-  border: 1px solid #eaeaea;
-  border-radius: 8px;
-  padding: 24px;
-}
 
 h2 {
   margin: 12px 0 8px;

@@ -1,38 +1,35 @@
-# STORM
+# STORM: Pathology–Spatial Transcriptomics Foundation Model Overview
 
-This template should help get you started developing with Vue 3 in Vite.
+## Positioning
+- STORM is a 555M-parameter multimodal foundation model that bridges H&E pathology images and spatial transcriptomics, unifying morphology and molecular signals. 
+- Two-stage self-supervised pretraining enables strong generalization for cross-modal alignment, reconstruction, and downstream adaptation.
 
-## Recommended IDE Setup
+## Training Corpus & Preprocessing
+- histMol corpus: 650k+ paired tiles across tissues, platforms, and resolutions, with resolution-specific preprocessing.  
+- Uses masked reconstruction, cross-modal alignment, and positional encodings to adapt to diverse spatial characteristics.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Architecture
+- Multi-branch Transformer: shallow modality-specific encoders; shared deeper Transformer for interaction; cross-attention decoders exchange information across modalities.  
+- Combined absolute and relative positional encodings support precise spatial alignment.  
+- Cross-modal reconstruction training improves translation between morphology and gene expression.
 
-## Recommended Browser Setup
+## Key Capabilities
+- **Tissue/region annotation**: higher NMI/AMI/ARI and expert concordance across tissues.  
+- **In situ gene expression prediction**: outperforms methods like iSTAR and ST-Net on platforms such as Xenium and Visium.  
+- **Prognosis and risk stratification**: generates survival risk heatmaps and interpretable regions directly from whole-slide images (e.g., breast and ovarian cancer).  
+- **Pathology–molecular embedding**: unified space that mitigates batch effects and supports continuous modeling of molecular subtypes and pathology regions.  
+- **Novel pattern discovery**: examples include a breast cancer progression continuum and relapse-associated immune exclusion zones in ovarian cancer.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Highlights
+- Large-scale, cross-platform, cross-resolution paired-data pretraining reduces domain transfer costs.  
+- Unified multimodal embeddings serve classification, regression, retrieval, and segmentation.  
+- Strong in low-/weak-label settings; suitable for rapid finetuning or zero-shot use.  
+- Provides interpretable spatial heatmaps for joint pathology and omics analysis.
 
-## Customize configuration
+## Typical Use Cases
+- Tissue structure annotation and QC  
+- In situ gene expression prediction and molecular subtype inference  
+- Survival/relapse risk assessment with interpretable maps  
+- Cross-cohort/platform embedding alignment and batch-effect mitigation  
+- Biomarker discovery combining pathology and spatial omics
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```

@@ -23,7 +23,7 @@ const router = createRouter({
       component: () => import('../views/tutorials/TutorialLayout.vue'),
       children: [
         {
-          path: 'visium',
+          path: '',
           name: 'Visum',
           component: () => import('../views/tutorials/Visium.vue'),
         },

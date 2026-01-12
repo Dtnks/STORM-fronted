@@ -1,21 +1,30 @@
 <template>
   <div class="document-page">
     <h1>Installation</h1>
-    <p>You can install the package in several ways.</p>
-    <h2>Using npm</h2>
-    <pre><code>npm install our-package --save</code></pre>
-    <h2>Using yarn</h2>
-    <pre><code>yarn add our-package</code></pre>
-    <h2>Using CDN</h2>
-    <pre><code>&lt;script src="https://unpkg.com/our-package/dist/our-package.min.js"&gt;&lt;/script&gt;</code></pre>
-    <h2>Compatibility</h2>
-    <p>The library supports the following browsers:</p>
+    <p>STORM is a Python package for pathology–spatial transcriptomics modeling. Choose one of the methods below.</p>
+
+    <h2>Prerequisites</h2>
     <ul>
-      <li>Chrome (latest)</li>
-      <li>Firefox (latest)</li>
-      <li>Safari (latest)</li>
-      <li>Edge (latest)</li>
+      <li>Python 3.9 or newer</li>
+      <li>pip ≥ 21 or conda (optional)</li>
+      <li>Recommended: virtual environment (venv/conda)</li>
     </ul>
+
+    <h2>Install from PyPI</h2>
+    <pre><code>pip install storm-foundation</code></pre>
+
+    <h2>Install from source (local clone)</h2>
+    <pre><code>git clone https://github.com/your-org/storm.git
+cd storm
+pip install -e .</code></pre>
+
+    <h2>GPU/Inference extras (optional)</h2>
+    <pre><code># with CUDA-enabled PyTorch (example)
+pip install torch --extra-index-url https://download.pytorch.org/whl/cu121
+pip install storm-foundation[inference]</code></pre>
+
+    <h2>Verify</h2>
+    <pre><code>python -c "import storm; print(storm.__version__)"</code></pre>
   </div>
 </template>
 

@@ -1,18 +1,30 @@
 <template>
   <div class="document-page">
-    <h1>Welcome to the STORM Docs</h1>
-    <p>Browse the left menu to access API guides for STORM.</p>
+    <h1>STORM Documentation</h1>
     <p>
-      Key modules covered: HDReader (HD data IO), VisiumReader (Visium spatial IO), pp (preprocessing pipelines),
-      and gt (feature extraction & inference utilities).
+      STORM is a 555M-parameter multimodal foundation model that bridges H&amp;E pathology images and spatial
+      transcriptomics, unifying morphology and molecular signals. Two-stage self-supervised pretraining equips it
+      for cross-modal alignment, reconstruction, and downstream adaptation.
     </p>
-    <p>Use the top button to collapse the menu when you need more reading space.</p>
+    <p>
+      The docs summarize the model’s training corpus (650k+ paired tiles), architecture (multi-branch Transformer
+      with shared deep layers and cross-attention decoders), and the spatial encodings and masked reconstruction
+      strategies used to align diverse tissues, platforms, and resolutions.
+    </p>
     <h2>What you’ll find</h2>
     <ul>
-      <li>API reference for all functions with parameters and returns clearly listed</li>
-      <li>Module overviews to help you pick the right entry point (HDReader, VisiumReader, pp, gt)</li>
-      <li>Router-based navigation with collapsible sidebar for quick switching</li>
-      <li>Responsive layout suitable for desktop and mobile</li>
+      <li>Core positioning: pathology–molecular unification and cross-modal generalization</li>
+      <li>Training data &amp; preprocessing: histMol corpus, resolution-specific pipelines</li>
+      <li>Architecture: modality-specific encoders, shared Transformer, cross-attention decoders</li>
+      <li>
+        Key capabilities: tissue/region annotation, in situ gene expression prediction, prognosis &amp; risk
+        stratification, pathology–molecular embedding
+      </li>
+      <li>Highlights: cross-platform pretraining, strong low/weak-label performance, interpretable spatial heatmaps</li>
+      <li>
+        Typical use cases: tissue QC, subtype inference, survival/relapse risk mapping, batch-effect mitigation,
+        biomarker discovery
+      </li>
     </ul>
   </div>
 </template>
