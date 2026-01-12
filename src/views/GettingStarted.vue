@@ -1,22 +1,22 @@
 <template>
   <div class="document-page">
-    <h1>快速开始</h1>
-    <p>本指南将帮助您快速上手使用我们的产品。</p>
-    <h2>前置条件</h2>
+    <h1>Getting Started</h1>
+    <p>This guide helps you onboard quickly.</p>
+    <h2>Prerequisites</h2>
     <ul>
-      <li>Node.js 14.0 或更高版本</li>
-      <li>npm 或 yarn 包管理器</li>
+      <li>Node.js 14.0 or above</li>
+      <li>npm or yarn package manager</li>
     </ul>
-    <h2>第一步：安装</h2>
+    <h2>Step 1: Install</h2>
     <pre><code>npm install our-package</code></pre>
-    <h2>第二步：引入</h2>
+    <h2>Step 2: Import</h2>
     <pre><code>import { OurComponent } from 'our-package'
 
-// 在Vue组件中使用
+// In your Vue component
 components: {
   OurComponent
 }</code></pre>
-    <h2>第三步：使用</h2>
+    <h2>Step 3: Use</h2>
     <pre><code>&lt;our-component :prop="value" @event="handler" /&gt;</code></pre>
   </div>
 </template>

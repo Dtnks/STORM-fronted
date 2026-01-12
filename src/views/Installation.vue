@@ -1,20 +1,20 @@
 <template>
   <div class="document-page">
-    <h1>安装</h1>
-    <p>您可以通过多种方式安装我们的产品。</p>
-    <h2>使用 npm</h2>
+    <h1>Installation</h1>
+    <p>You can install the package in several ways.</p>
+    <h2>Using npm</h2>
     <pre><code>npm install our-package --save</code></pre>
-    <h2>使用 yarn</h2>
+    <h2>Using yarn</h2>
     <pre><code>yarn add our-package</code></pre>
-    <h2>使用 CDN</h2>
+    <h2>Using CDN</h2>
     <pre><code>&lt;script src="https://unpkg.com/our-package/dist/our-package.min.js"&gt;&lt;/script&gt;</code></pre>
-    <h2>兼容性</h2>
-    <p>我们的产品支持以下浏览器：</p>
+    <h2>Compatibility</h2>
+    <p>The library supports the following browsers:</p>
     <ul>
-      <li>Chrome (最新版本)</li>
-      <li>Firefox (最新版本)</li>
-      <li>Safari (最新版本)</li>
-      <li>Edge (最新版本)</li>
+      <li>Chrome (latest)</li>
+      <li>Firefox (latest)</li>
+      <li>Safari (latest)</li>
+      <li>Edge (latest)</li>
     </ul>
   </div>
 </template>

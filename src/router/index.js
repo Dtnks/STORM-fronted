@@ -18,21 +18,46 @@ const router = createRouter({
       name: 'Installation',
       component: () => import('../views/Installation.vue'),
     },
-    // {
-    //   path: '/usage',
-    //   name: 'Usage',
-    //   component: () => import('../views/Usage.vue'),
-    // },
-    // {
-    //   path: '/api',
-    //   name: 'API',
-    //   component: () => import('../views/API.vue'),
-    // },
-    // {
-    //   path: '/examples',
-    //   name: 'Examples',
-    //   component: () => import('../views/Examples.vue'),
-    // },
+    {
+      path: '/contributors',
+      name: 'Contributors',
+      component: () => import('../views/Contributors.vue'),
+    },
+    {
+      path: '/api',
+      component: () => import('../views/api/ApiLayout.vue'),
+      children: [
+        {
+          path: '',
+          redirect: '/api/overview',
+        },
+        {
+          path: 'overview',
+          name: 'ApiOverview',
+          component: () => import('../views/api/Overview.vue'),
+        },
+        {
+          path: 'hdreader',
+          name: 'HDReader',
+          component: () => import('../views/api/HDReader.vue'),
+        },
+        {
+          path: 'visiumreader',
+          name: 'VisiumReader',
+          component: () => import('../views/api/VisiumReader.vue'),
+        },
+        {
+          path: 'pp',
+          name: 'PP',
+          component: () => import('../views/api/PP.vue'),
+        },
+        {
+          path: 'gt',
+          name: 'GT',
+          component: () => import('../views/api/GT.vue'),
+        },
+      ],
+    },
   ],
 })
 

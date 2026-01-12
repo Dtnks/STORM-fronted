@@ -1,14 +1,18 @@
 <template>
   <div class="document-page">
-    <h1>欢迎来到文档中心</h1>
-    <p>这是一个基于Vue 3的文档界面示例，包含左侧菜单和右侧内容展示区域。</p>
-    <p>您可以通过左侧菜单导航到不同的文档页面，或者使用顶部的菜单按钮折叠/展开菜单。</p>
-    <h2>功能特性</h2>
+    <h1>Welcome to the STORM Docs</h1>
+    <p>Browse the left menu to access API guides for STORM.</p>
+    <p>
+      Key modules covered: HDReader (HD data IO), VisiumReader (Visium spatial IO), pp (preprocessing pipelines),
+      and gt (feature extraction & inference utilities).
+    </p>
+    <p>Use the top button to collapse the menu when you need more reading space.</p>
+    <h2>What you’ll find</h2>
     <ul>
-      <li>响应式设计，支持桌面和移动设备</li>
-      <li>可折叠的左侧菜单</li>
-      <li>路由导航</li>
-      <li>清晰的文档结构</li>
+      <li>API reference for all functions with parameters and returns clearly listed</li>
+      <li>Module overviews to help you pick the right entry point (HDReader, VisiumReader, pp, gt)</li>
+      <li>Router-based navigation with collapsible sidebar for quick switching</li>
+      <li>Responsive layout suitable for desktop and mobile</li>
     </ul>
   </div>
 </template>

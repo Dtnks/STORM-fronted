@@ -11,13 +11,24 @@ const toggleMenu = () => {
 }
 
 const menuItems = [
-  { path: '/', name: '首页' },
-  { path: '/getting-started', name: '快速开始' },
-  { path: '/installation', name: '安装' },
-  { path: '/usage', name: '使用指南' },
-  { path: '/api', name: 'API文档' },
-  { path: '/examples', name: '示例' },
+  { path: '/', name: 'Home' },
+  { path: '/getting-started', name: 'Getting Started' },
+  { path: '/installation', name: 'Installation' },
+  { path: '/contributors', name: 'Contributors' },
+  {
+    path: '/api',
+    name: 'API Docs',
+    children: [
+      { path: '/api/overview', name: 'Overview' },
+      { path: '/api/hdreader', name: 'HDReader' },
+      { path: '/api/visiumreader', name: 'VisiumReader' },
+      { path: '/api/pp', name: 'pp' },
+      { path: '/api/gt', name: 'gt' },
+    ],
+  },
 ]
+
+const isActive = (path) => route.path === path || route.path.startsWith(`${path}/`)
 </script>
 
 <template>
@@ -50,9 +61,16 @@ const menuItems = [
         <nav class="menu">
           <ul>
             <li v-for="item in menuItems" :key="item.path">
-              <router-link :to="item.path" :class="{ active: route.path === item.path }">
+              <router-link :to="item.path" :class="{ active: isActive(item.path) }">
                 {{ item.name }}
               </router-link>
+              <ul v-if="item.children && isActive(item.path)" class="sub-menu">
+                <li v-for="sub in item.children" :key="sub.path">
+                  <router-link :to="sub.path" :class="{ active: isActive(sub.path) }">
+                    {{ sub.name }}
+                  </router-link>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -137,6 +155,22 @@ body {
 
 .menu li {
   margin-bottom: 5px;
+}
+
+.sub-menu {
+  list-style: none;
+  margin: 4px 0 8px;
+  padding-left: 18px;
+}
+
+.sub-menu a {
+  padding: 8px 16px;
+  font-size: 14px;
+  background: #f0f2f5;
+}
+
+.sub-menu a:hover {
+  background-color: #e2e6ed;
 }
 
 .menu a {
