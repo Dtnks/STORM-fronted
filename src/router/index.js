@@ -19,6 +19,17 @@ const router = createRouter({
       component: () => import('../views/Installation.vue'),
     },
     {
+      path: '/tutorials',
+      component: () => import('../views/tutorials/TutorialLayout.vue'),
+      children: [
+        {
+          path: 'visium',
+          name: 'Visum',
+          component: () => import('../views/tutorials/Visium.vue'),
+        },
+      ],
+    },
+    {
       path: '/contributors',
       name: 'Contributors',
       component: () => import('../views/Contributors.vue'),

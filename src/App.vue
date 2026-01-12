@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 
+import logo from './assets/logo.jpg'
 const router = useRouter()
 const route = useRoute()
 const isMenuOpen = ref(true)
@@ -14,6 +15,13 @@ const menuItems = [
   { path: '/', name: 'Home' },
   { path: '/getting-started', name: 'Getting Started' },
   { path: '/installation', name: 'Installation' },
+  {
+    path: '/tutorials',
+    name: 'Tutorials',
+    children: [
+      { path: '/tutorials/visium', name: 'Visium' },
+    ],
+  },
   { path: '/contributors', name: 'Contributors' },
   {
     path: '/api',
@@ -52,6 +60,9 @@ const isActive = (path) => route.path === path || route.path.startsWith(`${path}
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
       </button>
+      <div class="logo-box">
+        <img class="logo-img" :src="logo" alt="logo" />
+      </div>
       <h1 class="logo">STORM</h1>
     </header>
 
@@ -97,6 +108,19 @@ body {
     'Helvetica Neue', sans-serif;
   line-height: 1.6;
   color: #333;
+}
+
+
+.logo-box {
+  margin: 0 12px 0 0;
+}
+
+.logo-img {
+  height: 36px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
 .app-container {
