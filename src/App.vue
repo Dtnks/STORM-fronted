@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-
+console.log('App.vue')
 import logo from './assets/logo.jpg'
 const router = useRouter()
 const route = useRoute()
@@ -238,6 +238,9 @@ body {
 
   .content {
     padding: 20px;
+  }
+  .test{
+    color: red;
   }
 }
 </style>
