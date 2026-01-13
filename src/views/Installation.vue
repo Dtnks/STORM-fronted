@@ -24,6 +24,8 @@ pip install torch --extra-index-url https://download.pytorch.org/whl/cu121
 pip install storm-foundation[inference]</code></pre>
 
     <h2>Verify</h2>
+    <p>修改文案测试</p>
+    <p>Verify the installation by running the following command:</p>
     <pre><code>python -c "import storm; print(storm.__version__)"</code></pre>
   </div>
 </template>
