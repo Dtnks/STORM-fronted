@@ -1,0 +1,609 @@
+{
+  "meta": {
+    "projectRoot": "/Users/jiateng.dai/Desktop/STORM",
+    "generatedAt": "2026-01-13T02:13:56.194Z"
+  },
+  "nodes": {
+    "src/App.vue": {
+      "id": "src/App.vue",
+      "type": "code"
+    },
+    "src/main.js": {
+      "id": "src/main.js",
+      "type": "code"
+    },
+    "src/assets/logo.jpg": {
+      "id": "src/assets/logo.jpg",
+      "type": "asset"
+    },
+    "src/components/MarkdownViewer.vue": {
+      "id": "src/components/MarkdownViewer.vue",
+      "type": "code"
+    },
+    "src/router/index.js": {
+      "id": "src/router/index.js",
+      "type": "code"
+    },
+    "src/views/Contributors.vue": {
+      "id": "src/views/Contributors.vue",
+      "type": "code"
+    },
+    "src/views/GettingStarted.vue": {
+      "id": "src/views/GettingStarted.vue",
+      "type": "code"
+    },
+    "src/views/Home.vue": {
+      "id": "src/views/Home.vue",
+      "type": "code"
+    },
+    "src/views/Installation.vue": {
+      "id": "src/views/Installation.vue",
+      "type": "code"
+    },
+    "src/views/api/ApiLayout.vue": {
+      "id": "src/views/api/ApiLayout.vue",
+      "type": "code"
+    },
+    "src/views/api/GT.vue": {
+      "id": "src/views/api/GT.vue",
+      "type": "code"
+    },
+    "src/views/api/HDReader.vue": {
+      "id": "src/views/api/HDReader.vue",
+      "type": "code"
+    },
+    "src/views/api/Overview.vue": {
+      "id": "src/views/api/Overview.vue",
+      "type": "code"
+    },
+    "src/views/api/PP.vue": {
+      "id": "src/views/api/PP.vue",
+      "type": "code"
+    },
+    "src/views/api/VisiumReader.vue": {
+      "id": "src/views/api/VisiumReader.vue",
+      "type": "code"
+    },
+    "src/views/tutorials/TutorialLayout.vue": {
+      "id": "src/views/tutorials/TutorialLayout.vue",
+      "type": "code"
+    },
+    "src/views/tutorials/Visium.vue": {
+      "id": "src/views/tutorials/Visium.vue",
+      "type": "code"
+    },
+    "pkg:vue": {
+      "id": "pkg:vue",
+      "type": "pkg"
+    },
+    "pkg:vue-router": {
+      "id": "pkg:vue-router",
+      "type": "pkg"
+    },
+    "pkg:marked": {
+      "id": "pkg:marked",
+      "type": "pkg"
+    },
+    "pkg:highlight.js/lib/common": {
+      "id": "pkg:highlight.js/lib/common",
+      "type": "pkg"
+    },
+    "pkg:highlight.js/styles/github.css": {
+      "id": "pkg:highlight.js/styles/github.css",
+      "type": "pkg"
+    },
+    "pkg:@/components/MarkdownViewer.vue": {
+      "id": "pkg:@/components/MarkdownViewer.vue",
+      "type": "pkg"
+    },
+    "pkg:./md/visium.markdown?raw": {
+      "id": "pkg:./md/visium.markdown?raw",
+      "type": "pkg"
+    }
+  },
+  "edges": [
+    {
+      "from": "src/App.vue",
+      "to": "pkg:vue",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/App.vue",
+      "to": "pkg:vue-router",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/App.vue",
+      "to": "src/assets/logo.jpg",
+      "kind": "import",
+      "dynamic": false
+    },
+    {
+      "from": "src/main.js",
+      "to": "pkg:vue",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/main.js",
+      "to": "src/App.vue",
+      "kind": "import",
+      "dynamic": false
+    },
+    {
+      "from": "src/main.js",
+      "to": "src/router/index.js",
+      "kind": "import",
+      "dynamic": false
+    },
+    {
+      "from": "src/components/MarkdownViewer.vue",
+      "to": "pkg:vue",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/components/MarkdownViewer.vue",
+      "to": "pkg:marked",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/components/MarkdownViewer.vue",
+      "to": "pkg:highlight.js/lib/common",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/components/MarkdownViewer.vue",
+      "to": "pkg:highlight.js/styles/github.css",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "pkg:vue-router",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/Home.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/GettingStarted.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/Installation.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/tutorials/TutorialLayout.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/tutorials/Visium.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/Contributors.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/api/ApiLayout.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/api/Overview.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/api/HDReader.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/api/VisiumReader.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/api/PP.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/router/index.js",
+      "to": "src/views/api/GT.vue",
+      "kind": "dynamic",
+      "dynamic": true
+    },
+    {
+      "from": "src/views/api/ApiLayout.vue",
+      "to": "pkg:vue-router",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/views/tutorials/Visium.vue",
+      "to": "pkg:@/components/MarkdownViewer.vue",
+      "kind": "pkg",
+      "dynamic": false
+    },
+    {
+      "from": "src/views/tutorials/Visium.vue",
+      "to": "pkg:./md/visium.markdown?raw",
+      "kind": "pkg",
+      "dynamic": false
+    }
+  ],
+  "forward": {
+    "src/App.vue": [
+      {
+        "to": "pkg:vue",
+        "kind": "pkg",
+        "dynamic": false
+      },
+      {
+        "to": "pkg:vue-router",
+        "kind": "pkg",
+        "dynamic": false
+      },
+      {
+        "to": "src/assets/logo.jpg",
+        "kind": "import",
+        "dynamic": false
+      }
+    ],
+    "src/main.js": [
+      {
+        "to": "pkg:vue",
+        "kind": "pkg",
+        "dynamic": false
+      },
+      {
+        "to": "src/App.vue",
+        "kind": "import",
+        "dynamic": false
+      },
+      {
+        "to": "src/router/index.js",
+        "kind": "import",
+        "dynamic": false
+      }
+    ],
+    "src/components/MarkdownViewer.vue": [
+      {
+        "to": "pkg:vue",
+        "kind": "pkg",
+        "dynamic": false
+      },
+      {
+        "to": "pkg:marked",
+        "kind": "pkg",
+        "dynamic": false
+      },
+      {
+        "to": "pkg:highlight.js/lib/common",
+        "kind": "pkg",
+        "dynamic": false
+      },
+      {
+        "to": "pkg:highlight.js/styles/github.css",
+        "kind": "pkg",
+        "dynamic": false
+      }
+    ],
+    "src/router/index.js": [
+      {
+        "to": "pkg:vue-router",
+        "kind": "pkg",
+        "dynamic": false
+      },
+      {
+        "to": "src/views/Home.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/GettingStarted.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/Installation.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/tutorials/TutorialLayout.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/tutorials/Visium.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/Contributors.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/api/ApiLayout.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/api/Overview.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/api/HDReader.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/api/VisiumReader.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/api/PP.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      },
+      {
+        "to": "src/views/api/GT.vue",
+        "kind": "dynamic",
+        "dynamic": true
+      }
+    ],
+    "src/views/api/ApiLayout.vue": [
+      {
+        "to": "pkg:vue-router",
+        "kind": "pkg",
+        "dynamic": false
+      }
+    ],
+    "src/views/tutorials/Visium.vue": [
+      {
+        "to": "pkg:@/components/MarkdownViewer.vue",
+        "kind": "pkg",
+        "dynamic": false
+      },
+      {
+        "to": "pkg:./md/visium.markdown?raw",
+        "kind": "pkg",
+        "dynamic": false
+      }
+    ]
+  },
+  "reverse": {
+    "pkg:vue": [
+      {
+        "from": "src/App.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:vue"
+      },
+      {
+        "from": "src/main.js",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:vue"
+      },
+      {
+        "from": "src/components/MarkdownViewer.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:vue"
+      }
+    ],
+    "pkg:vue-router": [
+      {
+        "from": "src/App.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:vue-router"
+      },
+      {
+        "from": "src/router/index.js",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:vue-router"
+      },
+      {
+        "from": "src/views/api/ApiLayout.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:vue-router"
+      }
+    ],
+    "src/assets/logo.jpg": [
+      {
+        "from": "src/App.vue",
+        "kind": "import",
+        "dynamic": false,
+        "to": "src/assets/logo.jpg"
+      }
+    ],
+    "src/App.vue": [
+      {
+        "from": "src/main.js",
+        "kind": "import",
+        "dynamic": false,
+        "to": "src/App.vue"
+      }
+    ],
+    "src/router/index.js": [
+      {
+        "from": "src/main.js",
+        "kind": "import",
+        "dynamic": false,
+        "to": "src/router/index.js"
+      }
+    ],
+    "pkg:marked": [
+      {
+        "from": "src/components/MarkdownViewer.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:marked"
+      }
+    ],
+    "pkg:highlight.js/lib/common": [
+      {
+        "from": "src/components/MarkdownViewer.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:highlight.js/lib/common"
+      }
+    ],
+    "pkg:highlight.js/styles/github.css": [
+      {
+        "from": "src/components/MarkdownViewer.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:highlight.js/styles/github.css"
+      }
+    ],
+    "src/views/Home.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/Home.vue"
+      }
+    ],
+    "src/views/GettingStarted.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/GettingStarted.vue"
+      }
+    ],
+    "src/views/Installation.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/Installation.vue"
+      }
+    ],
+    "src/views/tutorials/TutorialLayout.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/tutorials/TutorialLayout.vue"
+      }
+    ],
+    "src/views/tutorials/Visium.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/tutorials/Visium.vue"
+      }
+    ],
+    "src/views/Contributors.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/Contributors.vue"
+      }
+    ],
+    "src/views/api/ApiLayout.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/api/ApiLayout.vue"
+      }
+    ],
+    "src/views/api/Overview.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/api/Overview.vue"
+      }
+    ],
+    "src/views/api/HDReader.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/api/HDReader.vue"
+      }
+    ],
+    "src/views/api/VisiumReader.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/api/VisiumReader.vue"
+      }
+    ],
+    "src/views/api/PP.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/api/PP.vue"
+      }
+    ],
+    "src/views/api/GT.vue": [
+      {
+        "from": "src/router/index.js",
+        "kind": "dynamic",
+        "dynamic": true,
+        "to": "src/views/api/GT.vue"
+      }
+    ],
+    "pkg:@/components/MarkdownViewer.vue": [
+      {
+        "from": "src/views/tutorials/Visium.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:@/components/MarkdownViewer.vue"
+      }
+    ],
+    "pkg:./md/visium.markdown?raw": [
+      {
+        "from": "src/views/tutorials/Visium.vue",
+        "kind": "pkg",
+        "dynamic": false,
+        "to": "pkg:./md/visium.markdown?raw"
+      }
+    ]
+  },
+  "errors": []
+}

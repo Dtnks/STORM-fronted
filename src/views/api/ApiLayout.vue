@@ -86,5 +86,8 @@ code {
   padding: 2px 6px;
   border-radius: 4px;
 }
+.doc {
+  max-width: 900px;
+}
 </style>
 
