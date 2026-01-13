@@ -34,3 +34,7 @@ coverage
 
 # Vitest
 __screenshots__/
+
+.code-impact/
+impact.txt
+impactCode.txt
