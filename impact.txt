@@ -1,5 +1,0 @@
-graph LR
-  n0["src/components/MarkdownViewer.vue"]
-  classDef seed fill:#ffd166,stroke:#d49b00,stroke-width:1.5px;
-  classDef impact fill:#ef476f,color:#fff;
-  class n0 seed;
