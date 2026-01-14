@@ -55,7 +55,7 @@ mouse:16
  0               176.5483  )
 </pre>
 
-![output image 0-3](tutorials/visium/1.png)
+![output image 0-3](https://storm-fronted.readthedocs.io/en/latest/tutorials/visium/1.png)
 
 ```python
 processer=Processer(Reader,224)
@@ -170,7 +170,7 @@ axs[1].imshow(crop_he)
 <matplotlib.image.AxesImage at 0x1f3c225d6d0>
 </pre>
 
-![output image 4-1](tutorials/visium/2.png)
+![output image 4-1](https://storm-fronted.readthedocs.io/en/latest/tutorials/visium/2.png)
 
 ```python
 processer.find_avg_grid()
