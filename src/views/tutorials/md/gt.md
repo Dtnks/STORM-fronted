@@ -172,7 +172,7 @@ plt.show()
   expr_raw = torch.load(expr_sample, map_location="cpu")
 </pre>
 
-![output image 2-1](tutorials/visium/3.png)
+![output image 2-1](https://storm-fronted.readthedocs.io/en/latest/tutorials/visium/3.png)
 
 ```python
 import os
@@ -445,7 +445,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![output image 10-0](tutorials/visium/4.png)
+![output image 10-0](https://storm-fronted.readthedocs.io/en/latest/tutorials/visium/4.png)
 
 ```python
 
