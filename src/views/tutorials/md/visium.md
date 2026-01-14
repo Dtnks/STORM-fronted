@@ -170,7 +170,7 @@ axs[1].imshow(crop_he)
 <matplotlib.image.AxesImage at 0x1f3c225d6d0>
 </pre>
 
-![output image 4-1](/en/latesttutorials/visium/2.png)
+![output image 4-1](/en/latest/tutorials/visium/2.png)
 
 ```python
 processer.find_avg_grid()
