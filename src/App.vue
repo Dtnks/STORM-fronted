@@ -19,7 +19,8 @@ const menuItems = [
     path: '/tutorials',
     name: 'Tutorials',
     children: [
-      { path: '/tutorials', name: 'Visium' },
+      { path: '/tutorials/visium', name: 'Visium' },
+      { path: '/tutorials/gt', name: 'gt' },
     ],
   },
   { path: '/contributors', name: 'Contributors' },

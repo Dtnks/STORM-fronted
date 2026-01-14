@@ -1,11 +1,11 @@
 <script setup>
 import MarkdownViewer from '@/components/MarkdownViewer.vue'
-import rawMarkdown from './md/visium.md?raw'
+import rawMarkdown from './md/gt.md?raw'
 </script>
 
 <template>
   <section class="tutorial-page">
-    <h3 class="tutorial-title">Visium</h3>
+    <h3 class="tutorial-title">GT</h3>
     <MarkdownViewer :source="rawMarkdown" />
   </section>
 </template>

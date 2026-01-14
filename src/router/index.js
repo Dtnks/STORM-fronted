@@ -24,8 +24,17 @@ const router = createRouter({
       children: [
         {
           path: '',
+          redirect: '/tutorials/visium',
+        },
+        {
+          path: 'visium',
           name: 'Visum',
           component: () => import('../views/tutorials/Visium.vue'),
+        },
+        {
+          path: 'gt',
+          name: 'TutorialGT',
+          component: () => import('../views/tutorials/gt.vue'),
         },
       ],
     },
