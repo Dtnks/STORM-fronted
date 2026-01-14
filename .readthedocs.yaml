@@ -12,8 +12,7 @@ build:
   commands:
     - npm ci
     - npm run build
-    - export OUTPUT_DIR="${READTHEDOCS_OUTPUT:-_readthedocs}/html"
-    - mkdir -p "$OUTPUT_DIR"
-    - cp -r dist/. "$OUTPUT_DIR/"
+    - OUTPUT_DIR="${READTHEDOCS_OUTPUT:-_readthedocs}/html"; mkdir -p "$OUTPUT_DIR"
+    - OUTPUT_DIR="${READTHEDOCS_OUTPUT:-_readthedocs}/html"; cp -r dist/. "$OUTPUT_DIR/"
 
 formats: []
